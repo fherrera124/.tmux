@@ -194,6 +194,18 @@ Bindings for `copy-mode-vi`:
 - `y` copies the selection to the top paste-buffer
 - `Escape` cancels the current operation
 
+Algunos comandos genéricos de utilidad:
+
+ - <prefix> c Create a new window (with shell)
+ - <prefix> w Choose window from a list
+ - <prefix> 0 Switch to window 0 (by number )
+ - <prefix> , Rename the current window
+ - <prefix> o Go to the next pane
+ - <prefix> ; Toggle between the current and previous pane
+ - <prefix> x Close the current pane
+
+
+
 Configuration
 -------------
 
@@ -214,10 +226,10 @@ look is based on the use of special symbols: <img width="80" alt="Powerline Symb
 
 To make use of these symbols, there are several options:
 
-- use a font that already bundles those: this is e.g. the case of the
+ - use a font that already bundles those: this is e.g. the case of the
   [2.030R-ro/1.050R-it version][source code pro] of the Source Code Pro font
-- use a [pre-patched font][powerline patched fonts]
-- use your preferred font along with the [Powerline font][powerline font] (that
+ - use a [pre-patched font][powerline patched fonts]
+ - use your preferred font along with the [Powerline font][powerline font] (that
   only contains the Powerline symbols): [this highly depends on your operating
   system and your terminal emulator][terminal support], for instance here's a
   screenshot of iTerm2 configured to use `PowerlineSymbols.otf`
@@ -251,26 +263,26 @@ your own preferences.
 
 This configuration supports the following builtin variables:
 
- - `#{battery_bar}`: horizontal battery charge bar
- - `#{battery_percentage}`: battery percentage
- - `#{battery_status}`: is battery charging or discharging?
- - `#{battery_vbar}`: vertical battery charge bar
- - `#{circled_session_name}`: circled session number, up to 20
- - `#{hostname}`: SSH/Mosh aware hostname information
- - `#{hostname_ssh}`: SSH/Mosh aware hostname information, blank when not
+  - `#{battery_bar}`: horizontal battery charge bar
+  - `#{battery_percentage}`: battery percentage
+  - `#{battery_status}`: is battery charging or discharging?
+  - `#{battery_vbar}`: vertical battery charge bar
+  - `#{circled_session_name}`: circled session number, up to 20
+  - `#{hostname}`: SSH/Mosh aware hostname information
+  - `#{hostname_ssh}`: SSH/Mosh aware hostname information, blank when not
    connected to a remote server through SSH/Mosh
- - `#{loadavg}`: load average
- - `#{pairing}`: is session attached to more than one client?
- - `#{prefix}`: is prefix being depressed?
- - `#{root}`: is current user root?
- - `#{synchronized}`: are the panes synchronized?
- - `#{uptime_y}`: uptime years
- - `#{uptime_d}`: uptime days, modulo 365 when `#{uptime_y}` is used
- - `#{uptime_h}`: uptime hours
- - `#{uptime_m}`: uptime minutes
- - `#{uptime_s}`: uptime seconds
- - `#{username}`: SSH/Mosh aware username information
- - `#{username_ssh}`: SSH aware username information, blank when not connected
+  - `#{loadavg}`: load average
+  - `#{pairing}`: is session attached to more than one client?
+  - `#{prefix}`: is prefix being depressed?
+  - `#{root}`: is current user root?
+  - `#{synchronized}`: are the panes synchronized?
+  - `#{uptime_y}`: uptime years
+  - `#{uptime_d}`: uptime days, modulo 365 when `#{uptime_y}` is used
+  - `#{uptime_h}`: uptime hours
+  - `#{uptime_m}`: uptime minutes
+  - `#{uptime_s}`: uptime seconds
+  - `#{username}`: SSH/Mosh aware username information
+  - `#{username_ssh}`: SSH aware username information, blank when not connected
    to a remote server through SSH/Mosh
 
 Beside custom variables mentioned above, the `tmux_conf_theme_status_left` and
@@ -368,3 +380,11 @@ font.
 ![regedit](https://cloud.githubusercontent.com/assets/553208/19741304/71a2f3ae-9bc0-11e6-96aa-4c09a812c313.png)
 
 [font linking]: https://msdn.microsoft.com/en-us/goglobal/bb688134.aspx
+
+
+## Mis modificaciones:
+
+Instalé tmu (Tmux Plugin Manager), para instalar por ahora tmux-resurrect.
+
+
+
